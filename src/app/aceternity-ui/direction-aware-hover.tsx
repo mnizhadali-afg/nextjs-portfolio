@@ -92,8 +92,8 @@ const DirectionAwareHover = ({
                 'h-full w-full object-cover scale-[1.15]',
                 imageClassName
               )}
-              width='1000'
-              height='1000'
+              width='1200'
+              height='1200'
               src={imageUrl}
             />
           </motion.div>

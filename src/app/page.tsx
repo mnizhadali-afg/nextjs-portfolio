@@ -5,26 +5,34 @@ import Navigation from '@/app/navigation/page.tsx';
 import Boxes from '@/app/background-boxes/';
 import BackgroundGradient from '@/app/background-gradient/';
 
-import Hobbies from '@/app/hobbies';
 import Hero from '@/app/hero';
+import Hobbies from '@/app/hobbies';
 import Skills from '@/app/skills';
 import GridBG from '@/app/grid-bg';
 import HeroHighlight from '@/app/hero-highlight-dotted';
 import Projects from '@/app/projects';
+import MeteorCard from '@/app/meteor-card';
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Hobbies />
-      <div className='flex'>
+      <GridBG />
+      <div className='columns-4 container'>
+        <Skills />
         <Skills />
         <Skills />
         <Skills />
       </div>
       <GridBG />
-      <HeroHighlight />
       <Projects />
+      <div className='columns-4 container py-12'>
+        <MeteorCard />
+        <MeteorCard />
+        <MeteorCard />
+        <MeteorCard />
+      </div>
     </>
   );
 }
